@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="menu">
+            <li class="menu-item"><a href="#home">Home</a></li>
+            <li class="menu-item"><a href="#about">About</a></li>
+            <li class="menu-item dropdown">
+                <a href="#services">Services</a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#web">Web Development</a></li>
+                    <li class="submenu-item"><a href="#app">App Development</a></li>
+                    <li class="submenu-item"><a href="#design">UI/UX Design</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <section id="home"><h1>Home Section</h1></section>
+        <section id="about"><h1>About Section</h1></section>
+        <section id="services">
+            <h1>Services Section</h1>
+            <section id="web"><h2>Web Development</h2></section>
+            <section id="app"><h2>App Development</h2></section>
+            <section id="design"><h2>UI/UX Design</h2></section>
+        </section>
+        <section id="contact"><h1>Contact Section</h1></section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
